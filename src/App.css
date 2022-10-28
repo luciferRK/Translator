@@ -1,10 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.cdnfonts.com/css/league-spartan');
+
 .App {
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.App h1, .App h4, .Share {
+  color: white;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.logo {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.blue {
+  color: lightblue;        
+}
+
+Alert, Link {
+  word-break: break-word;
+}
+
+.btn {
+  padding: 5px;
+  margin-top: 10px;
 }
 
 Form {
@@ -21,12 +46,88 @@ Form {
 and (min-width : 1224px)  {
 
   .TranslateBox {
+    width: 800px; 
+    padding: 25px;
+    margin: 5px;
+    border: solid black 1px;
+    word-wrap: break-word;
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray);
+  }
+
+
+   .InfoAlert {
+    width: 600px; 
+    padding: 25px;
+    margin: 5px;
+    text-align: justify;
+    /* border: solid black 1px; */
+    background-color: white;
+  }
+ 
+
+  Button {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .TextArea {
+    display: inline-flex;
+    margin: 5px;
+  }
+
+  .form-group {
+    width: 370px;
+    padding: 5px;
+    margin: 0px;
+  }
+}
+
+@media only screen 
+and (max-width : 600px)  
+{
+
+  .TranslateBox {
+    width: 350px; 
+    padding: 25px;
+    margin-top: 30px;
+    border: solid black 1px; 
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray);
+  }
+  
+  .InfoAlert {
+    width: 320px; 
+    padding: 25px;
+    text-align: justify;
+   /* border: solid black 1px; */
+    background-color: white;
+  }
+
+  Alert {
+    width: 320px;
+  }
+
+  Button {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+  /* For general iPad layouts */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+  .TranslateBox {
     width: 600px; 
     padding: 25px;
     margin: 5px;
     border: solid black 1px;
-    background-color: white;
-}
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray)
+  }
 
    .InfoAlert {
     width: 600px; 
@@ -43,28 +144,25 @@ and (min-width : 1224px)  {
   }
 }
 
-@media only screen 
-and (max-width : 600px)  
-{
-
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
   .TranslateBox {
-    width: 320px; 
+    width: 600px; 
     padding: 25px;
-    margin-top: 30px;
-    border: solid black 1px; 
-    background-color: white;
-  }
-  
-  .InfoAlert {
-    width: 320px; 
-    padding: 25px;
-   /* border: solid black 1px; */ 
-    background-color: white;
+    margin: 5px;
+    border: solid black 1px;
+    /* background-color: white; */
+    background-image: linear-gradient(lightblue, gray)
   }
 
-  Alert {
-    width: 320px;
+   .InfoAlert {
+    width: 600px; 
+    padding: 25px;
+    margin: 5px;
+    /* border: solid black 1px; */
+    background-color: white;
   }
+ 
 
   Button {
     padding: 5px;
@@ -87,6 +185,7 @@ and (max-width : 600px)
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
